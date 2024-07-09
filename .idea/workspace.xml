@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9663870-ddcc-413d-ac98-8f2433e3f6fb" name="Changes" comment="Added new startupproject app myshop">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/myshop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+    <list default="true" id="f9663870-ddcc-413d-ac98-8f2433e3f6fb" name="Changes" comment="Created directory structure and files for catalog templates">
+      <change afterPath="$PROJECT_DIR$/shop/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/static/css/pdf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/static/img/no_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/product/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/product/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +25,29 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "santoshnarayanan"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/santoshnarayanan/myshop.git",
+    "accountId": "60314920-3358-4656-b7fc-77cb946aa6b5"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
@@ -35,9 +59,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/santosh/Projects/Django/myshop/shop/static",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,6 +73,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop/static" />
+      <recent name="$PROJECT_DIR$/shop" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop/static" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="myshop" type="Python.DjangoServer" factoryName="Django server">
       <module name="myshop" />
@@ -89,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720517707744</updated>
-      <workItem from="1720517710954" duration="1728000" />
+      <workItem from="1720517710954" duration="10784000" />
     </task>
     <task id="LOCAL-00001" summary="Added new startupproject app myshop">
       <option name="closed" value="true" />
@@ -99,14 +134,153 @@
       <option name="project" value="LOCAL" />
       <updated>1720519438565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added new startupapp app shop">
+      <option name="closed" value="true" />
+      <created>1720519475358</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720519475358</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated manage.py for myshop">
+      <option name="closed" value="true" />
+      <created>1720519545505</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720519545505</updated>
+    </task>
+    <task id="LOCAL-00004" summary="migrations for Product and Category models">
+      <option name="closed" value="true" />
+      <created>1720519574595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720519574595</updated>
+    </task>
+    <task id="LOCAL-00005" summary="project settings">
+      <option name="closed" value="true" />
+      <created>1720519594303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720519594303</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Applied migrations">
+      <option name="closed" value="true" />
+      <created>1720519664338</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720519664338</updated>
+    </task>
+    <task id="LOCAL-00007" summary="register models">
+      <option name="closed" value="true" />
+      <created>1720520075429</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720520075429</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Correction">
+      <option name="closed" value="true" />
+      <created>1720520145544</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720520145544</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated db">
+      <option name="closed" value="true" />
+      <created>1720521339627</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720521339627</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Build catalog views">
+      <option name="closed" value="true" />
+      <created>1720522050861</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720522050862</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update urls for the shop application">
+      <option name="closed" value="true" />
+      <created>1720522426681</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720522426681</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update urls to include shop urls">
+      <option name="closed" value="true" />
+      <created>1720522523243</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720522523243</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Retrieve url of the given object">
+      <option name="closed" value="true" />
+      <created>1720527021742</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720527021742</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Created directory structure and files for catalog templates">
+      <option name="closed" value="true" />
+      <created>1720527585565</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720527585565</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added new startupproject app myshop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new startupproject app myshop" />
+    <MESSAGE value="Added new startupapp app shop" />
+    <MESSAGE value="Updated manage.py for myshop" />
+    <MESSAGE value="migrations for Product and Category models" />
+    <MESSAGE value="project settings" />
+    <MESSAGE value="Applied migrations" />
+    <MESSAGE value="register models" />
+    <MESSAGE value="Correction" />
+    <MESSAGE value="updated db" />
+    <MESSAGE value="Build catalog views" />
+    <MESSAGE value="Update urls for the shop application" />
+    <MESSAGE value="Update urls to include shop urls" />
+    <MESSAGE value="Retrieve url of the given object" />
+    <MESSAGE value="Created directory structure and files for catalog templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created directory structure and files for catalog templates" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="python-line">
+          <url>file://$PROJECT_DIR$/myshop/urls.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
