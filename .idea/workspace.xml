@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9663870-ddcc-413d-ac98-8f2433e3f6fb" name="Changes" comment="Created directory structure and files for catalog templates">
-      <change afterPath="$PROJECT_DIR$/shop/static/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/static/css/pdf.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/static/img/no_image.png" afterDir="false" />
+    <list default="true" id="f9663870-ddcc-413d-ac98-8f2433e3f6fb" name="Changes" comment="Build Shopping cart and use Django Sesssion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/product/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/product/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,51 +18,51 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "santoshnarayanan"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;santoshnarayanan&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/santoshnarayanan/myshop.git",
-    "accountId": "60314920-3358-4656-b7fc-77cb946aa6b5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/santoshnarayanan/myshop.git&quot;,
+    &quot;accountId&quot;: &quot;60314920-3358-4656-b7fc-77cb946aa6b5&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2j0Ik9TjBurCWEm0knOwuY2xxyJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/santosh/Projects/Django/myshop/shop/static",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/santosh/Pictures/Screenshots/Screenshot from 2024-07-09 16-51-52.png&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/shop/static" />
@@ -124,7 +114,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720517707744</updated>
-      <workItem from="1720517710954" duration="10784000" />
+      <workItem from="1720517710954" duration="17223000" />
+      <workItem from="1720539760725" duration="113000" />
+      <workItem from="1720540122176" duration="1447000" />
+      <workItem from="1720616423351" duration="3784000" />
+      <workItem from="1720620385635" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="Added new startupproject app myshop">
       <option name="closed" value="true" />
@@ -238,7 +232,79 @@
       <option name="project" value="LOCAL" />
       <updated>1720527585565</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Displaying categories and products">
+      <option name="closed" value="true" />
+      <created>1720532413843</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720532413843</updated>
+    </task>
+    <task id="LOCAL-00016" summary="images uploaded on admin site">
+      <option name="closed" value="true" />
+      <created>1720535571110</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720535571110</updated>
+    </task>
+    <task id="LOCAL-00017" summary="image field added and migrations created">
+      <option name="closed" value="true" />
+      <created>1720535597338</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1720535597338</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Duplicate entry removed">
+      <option name="closed" value="true" />
+      <created>1720535647661</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1720535647661</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Line breaks">
+      <option name="closed" value="true" />
+      <created>1720535661888</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1720535661888</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Details product detail is shown">
+      <option name="closed" value="true" />
+      <created>1720535683269</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1720535683269</updated>
+    </task>
+    <task id="LOCAL-00021" summary="database updated">
+      <option name="closed" value="true" />
+      <created>1720535738709</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1720535738709</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update README.md">
+      <option name="closed" value="true" />
+      <created>1720536345132</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1720536345132</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Build Shopping cart and use Django Sesssion">
+      <option name="closed" value="true" />
+      <created>1720620430939</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1720620430939</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +336,16 @@
     <MESSAGE value="Update urls to include shop urls" />
     <MESSAGE value="Retrieve url of the given object" />
     <MESSAGE value="Created directory structure and files for catalog templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created directory structure and files for catalog templates" />
+    <MESSAGE value="Displaying categories and products" />
+    <MESSAGE value="images uploaded on admin site" />
+    <MESSAGE value="image field added and migrations created" />
+    <MESSAGE value="Duplicate entry removed" />
+    <MESSAGE value="Line breaks" />
+    <MESSAGE value="Details product detail is shown" />
+    <MESSAGE value="database updated" />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Build Shopping cart and use Django Sesssion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build Shopping cart and use Django Sesssion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
