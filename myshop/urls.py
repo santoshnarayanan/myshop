@@ -22,8 +22,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
+# include the cart URL pattern before the shop.urls pattern since it’s more restrictive
+# than the latter
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('cart/', include('cart.urls', namespace='cart')),
     path('', include('shop.urls', namespace='shop')),
 ]
 
