@@ -54,7 +54,7 @@ class Cart:
         # a total_price attribute to each item
         for item in cart.values():
             item['price'] = Decimal(item['price'])
-            item['quantity'] = item['price'] * item['quantity']
+            item['total_price'] = item['price'] * item['quantity']
             yield item
 
     # Count all items in the cart
