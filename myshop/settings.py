@@ -27,7 +27,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # Application definition
-# new app shop and cart installed
+# new app shop and cart installed, register order app for customers
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cart.apps.CartConfig',
+    'orders.apps.OrdersConfig',
     'shop.apps.ShopConfig',
 ]
 
