@@ -27,6 +27,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # Application definition
+# new app shop and cart installed
 
 INSTALLED_APPS = [
     'django.contrib.admin',

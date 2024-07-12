@@ -7,7 +7,7 @@ from .forms import CartAddProductForm
 
 # Create your views here.
 # view for adding products to the cart or updating quantities for existing products
-@require_POST
+@require_POST # allow only POST requests
 def cart_add(request, product_id):
     cart = Cart(request)
     product = get_object_or_404(Product, id=product_id)

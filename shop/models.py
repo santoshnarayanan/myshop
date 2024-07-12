@@ -28,6 +28,7 @@ class Product(models.Model):
     slug = models.SlugField(max_length=200)
     image = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
     description = models.TextField()
+    # for price used DecimalField to avoid rounding issues
     price = models.DecimalField(max_digits=10, decimal_places=2)
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
@@ -45,4 +46,5 @@ class Product(models.Model):
         return self.name
 
     def get_absolute_url(self):
+        # get_absolute_url() is the convention to retrieve the URL for a given object
         return reverse('shop:product_detail', args=[self.id, self.slug])

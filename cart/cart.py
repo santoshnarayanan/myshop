@@ -6,10 +6,12 @@ from shop.models import Product
 # Cart class that will allow you to manage the shopping cart
 class Cart:
     def __init__(self, request):
-        # init cart
+        # initialize cart
+        # store the current session to make it acccessible to other methods
         self.session = request.session
         cart = self.session.get(settings.CART_SESSION_ID)
         if not cart:
+            # save empty cart in the session
             cart = self.session[settings.CART_SESSION_ID] = {}
         self.cart = cart
 
@@ -23,6 +25,9 @@ class Cart:
                 'quantity': 0,
                 'price': str(product.price)
             }
+        # Boolean that indicates whether the quantity needs to be overridden
+        # with the given quantity (True) or whether the new quantity
+        # has to be added to the existing quantity (False)
         if override_quantity:
             self.cart[product_id]['quantity'] = quantity
         else:

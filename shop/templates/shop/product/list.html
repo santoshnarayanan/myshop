@@ -4,6 +4,11 @@
 	{% if category %} {{ category.name }} {% else %}Products{% endif %}
 {% endblock %}
 {% block content %}
+    {% comment %} 
+        This is product list template used for both listing
+        is used for both listing all available products and listing products
+        filtered by category
+    {% endcomment %}
     <div id="sidebar">
         <h3>Categories</h3>
         <ul>
@@ -22,6 +27,7 @@
         {% for product in products %}
             <div class="item">
                 <a href="{{ product.get_absolute_url }}">
+                    {% comment %} provide a default image for the products that don’t have an image {% endcomment %}
                     <img src="{% if product.image %}{{ product.image.url }}{% else %}
                         {% static "img/no_image.png" %}{% endif %}">
                 </a>
