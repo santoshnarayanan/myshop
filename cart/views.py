@@ -29,5 +29,9 @@ def cart_remove(request, product_id):
 
 # display the cart and its items
 def cart_detail(request):
+    # create an instance of CartAddProductForm for each item in the cart to allow changing product
+    # quantities and set the override field to True
     cart = Cart(request)
+    for item in cart:
+        item['update_quantity_form'] = CartAddProductForm(initial={'quantity': item['quantity'], 'override': True})
     return render(request, 'cart/detail.html', {'cart': cart})
