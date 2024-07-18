@@ -128,3 +128,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 # key that you are going to use to store the cart in the user session
 CART_SESSION_ID = 'cart'
+
+# Email Server Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
