@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9663870-ddcc-413d-ac98-8f2433e3f6fb" name="Changes" comment="Build Shopping cart and use Django Sesssion">
+    <list default="true" id="f9663870-ddcc-413d-ac98-8f2433e3f6fb" name="Changes" comment="updated configuration for email and Celery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/santosh/Pictures/Screenshots/Screenshot from 2024-07-09 16-51-52.png&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.myshop.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/santosh/Pictures/Screenshots/Screenshot from 2024-07-09 16-51-52.png",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/shop/static" />
@@ -80,14 +83,26 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="myshop.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (myshop)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
+      <option name="port" value="8080" />
       <option name="host" value="localhost" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -107,6 +122,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f9663870-ddcc-413d-ac98-8f2433e3f6fb" name="Changes" comment="" />
@@ -119,6 +137,12 @@
       <workItem from="1720540122176" duration="1447000" />
       <workItem from="1720616423351" duration="3784000" />
       <workItem from="1720620385635" duration="55000" />
+      <workItem from="1720623225755" duration="5095000" />
+      <workItem from="1720777135195" duration="616000" />
+      <workItem from="1720787006676" duration="8056000" />
+      <workItem from="1721293027138" duration="841000" />
+      <workItem from="1721296886045" duration="9900000" />
+      <workItem from="1721326404992" duration="5908000" />
     </task>
     <task id="LOCAL-00001" summary="Added new startupproject app myshop">
       <option name="closed" value="true" />
@@ -304,7 +328,127 @@
       <option name="project" value="LOCAL" />
       <updated>1720620430939</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Changes of project settings for Pycharm">
+      <option name="closed" value="true" />
+      <created>1720623256403</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1720623256403</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Create shopping cart views and update cart views in global urls">
+      <option name="closed" value="true" />
+      <created>1720626287192</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1720626287192</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Adding products to card">
+      <option name="closed" value="true" />
+      <created>1720627616899</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1720627616899</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Adding products to cart">
+      <option name="closed" value="true" />
+      <created>1720628231072</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1720628231072</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Creating context_processor">
+      <option name="closed" value="true" />
+      <created>1720790085039</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1720790085039</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Update the cart to display items">
+      <option name="closed" value="true" />
+      <created>1720790122308</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1720790122308</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Database updated">
+      <option name="closed" value="true" />
+      <created>1720790136611</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1720790136611</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Created Order Models">
+      <option name="closed" value="true" />
+      <created>1720791825056</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1720791825056</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Migrations for Model Oder and Ordr_Item">
+      <option name="closed" value="true" />
+      <created>1720792007039</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1720792007039</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Database updated">
+      <option name="closed" value="true" />
+      <created>1720792129535</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1720792129535</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Include order models in admin">
+      <option name="closed" value="true" />
+      <created>1720793439847</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1720793439847</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Updated database">
+      <option name="closed" value="true" />
+      <created>1720793642634</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1720793642635</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Registering Orders">
+      <option name="closed" value="true" />
+      <created>1721297496792</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1721297496792</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Configuring Celery to send messages to message Broker(rabbitMQ)">
+      <option name="closed" value="true" />
+      <created>1721310164981</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1721310164981</updated>
+    </task>
+    <task id="LOCAL-00038" summary="updated configuration for email and Celery">
+      <option name="closed" value="true" />
+      <created>1721331849593</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1721331849593</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,18 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added new startupproject app myshop" />
-    <MESSAGE value="Added new startupapp app shop" />
-    <MESSAGE value="Updated manage.py for myshop" />
-    <MESSAGE value="migrations for Product and Category models" />
-    <MESSAGE value="project settings" />
-    <MESSAGE value="Applied migrations" />
-    <MESSAGE value="register models" />
-    <MESSAGE value="Correction" />
-    <MESSAGE value="updated db" />
-    <MESSAGE value="Build catalog views" />
-    <MESSAGE value="Update urls for the shop application" />
-    <MESSAGE value="Update urls to include shop urls" />
     <MESSAGE value="Retrieve url of the given object" />
     <MESSAGE value="Created directory structure and files for catalog templates" />
     <MESSAGE value="Displaying categories and products" />
@@ -345,17 +477,20 @@
     <MESSAGE value="database updated" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Build Shopping cart and use Django Sesssion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Build Shopping cart and use Django Sesssion" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="python-line">
-          <url>file://$PROJECT_DIR$/myshop/urls.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Changes of project settings for Pycharm" />
+    <MESSAGE value="Create shopping cart views and update cart views in global urls" />
+    <MESSAGE value="Adding products to card" />
+    <MESSAGE value="Adding products to cart" />
+    <MESSAGE value="Creating context_processor" />
+    <MESSAGE value="Update the cart to display items" />
+    <MESSAGE value="Created Order Models" />
+    <MESSAGE value="Migrations for Model Oder and Ordr_Item" />
+    <MESSAGE value="Database updated" />
+    <MESSAGE value="Include order models in admin" />
+    <MESSAGE value="Updated database" />
+    <MESSAGE value="Registering Orders" />
+    <MESSAGE value="Configuring Celery to send messages to message Broker(rabbitMQ)" />
+    <MESSAGE value="updated configuration for email and Celery" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated configuration for email and Celery" />
   </component>
 </project>
