@@ -1,0 +1,5 @@
+django
+Pillow
+celery
+python-decouple
+python3-celery
